@@ -1,0 +1,27 @@
+<template>
+<v-app>
+
+
+      <v-app-bar app>
+        <Header title="CSS3 Generator"/>
+      </v-app-bar>
+  <v-main>
+    <v-container fluid>
+      <router-view></router-view>
+    </v-container>
+  </v-main>
+</v-app>
+</template>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap');
+</style>
+<script>
+import Header from './components/Header'
+export default {
+  name:"App",
+  components:{
+    Header
+  },
+}
+</script>
